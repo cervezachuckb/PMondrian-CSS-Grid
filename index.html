@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piet Mondrian CSS Grid Painting</title>
+
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .piet-painting {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+        }
+
+        .piet-mondrian2 {
+            display: grid;
+            width: 619px;
+            height: 671px;
+            grid-template-columns: 50px 200px 120px 70px 70px 40px 15px;
+            grid-template-rows: 20px 60px 60px 150px 80px 30px 80px 60px 30px 20px;
+            grid-gap: 9px;
+            background-color: black;
+        }
+        .yellow-box {
+            background-color: blanchedalmond;
+            grid-area: 1 / 1 / 4 / 2;
+        }
+        .red-box {
+            background-color: firebrick;
+        }
+        .white-box {
+            background-color: white;
+        }
+        .box2 {
+            grid-area: 1 / 4 / 3 / 7;
+        }
+        .box3 {
+            grid-area: 1 / 7 / 5 / 8;
+        }
+        .red-box2 {
+            background-color: firebrick;
+            grid-area: 2 / 2 / 4 / 3;
+        }
+        .yellow-box2 {
+            background-color: blanchedalmond;
+            grid-area: 3 / 4 / 5 / 7;
+        }
+        .box4 {
+            grid-area: 2 / 3 / 4 / 4;
+        }
+        .blue-box {
+            background-color: indigo;
+            grid-area: 4 / 2 / 6 / 3;
+        }
+        .box5 {
+            grid-area: 4 / 1 / 9 / 2;
+        }
+
+        .box6 {
+            grid-area: 5/ 4/6/6;
+        }
+        .box7 {
+            grid-area: 6/2/7/3;
+        }
+        .redbox3 {
+            grid-area: 6/3/8/4;
+        }
+        .redbox4 {
+            grid-area: 6/4/8/6;
+        }
+        .box8 {
+            grid-area: 7/2/9/3;
+        }
+        .bluebox2 {
+            grid-area: 8/3/9/5
+        }
+        .box9 {
+            grid-area: 8/5/9/6;
+        }
+        .box10 {
+            grid-area: 8/6/9/7;
+        }
+        .box11 {
+            grid-area: 9/1/11/2;
+        }
+        .box12 {
+            grid-area: 9/5/10/7;
+        }
+        .box13 {
+            grid-area: 10/2/11/8
+        }
+        .yellowbox3 {
+            grid-area: 9/2/10/5;
+        }
+    </style>
+</head>
+<body>
+    <h2>Piet Mondrian painting recreated using CSS grid.</h2>
+    <p>See Piet's original work <a href="./public/pmond_orig.html">here</a>.</p>
+
+    <div class="piet-painting">
+        <div class="piet-mondrian2">
+          <div class="yellow-box"></div>
+          <div class="red-box"></div>
+          <div class="white-box"></div>
+          <div class="white-box box2"></div>
+          <div class="white-box box3"></div>
+          <div class="red-box2"></div>
+          <div class="white-box box4"></div>
+          <div class="yellow-box2"></div>
+          <div class="white-box box5"></div>
+          <div class="blue-box"></div>
+          <div class="white-box box6"></div>
+          <div class="white-box box7"></div>
+          <div class="red-box redbox3"></div>
+          <div class="red-box redbox4"></div>
+          <div class="white-box box8"></div>
+          <div class="blue-box bluebox2"></div>
+          <div class="white-box box9"></div>
+          <div class="white-box box10"></div>
+          <div class="white-box box11"></div>
+          <div class="white-box box12"></div>
+          <div class="white-box box13"></div>
+          <div class="yellow-box yellowbox3"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;2024 Chuck Barriga</p>
+    </footer>
+</body>
+</html>

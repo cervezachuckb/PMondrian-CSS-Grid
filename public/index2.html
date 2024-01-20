@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: lightgrey;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .piet-painting {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .piet-mondrian3 {
+        display: grid;
+        width: 581px;
+        height: 757px;
+        grid-template-columns: repeat(10, 50px);
+        grid-template-rows: 50px 20px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 20px 50px;
+        grid-gap: 9px;
+        background-color: black;
+    }
+    .white-box {
+        background-color: white;
+    }
+    .box1 {
+        grid-area: 1/1/4/2;
+    }
+    .yellow-box {
+        background-color: yellow;
+    }
+    .yellowbox1 {
+        grid-area: 1/2/2/5;
+    }
+    .box2 {
+        grid-area: 1/5/2/8;
+    }
+    .box3 {
+        grid-area: 1/8/2/10;
+    }
+    .box4 {
+        grid-area: 1/10/3/-1;
+    }
+    .box5 {
+        grid-area: 2/2/4/4;
+    }
+    .red-box {
+        background-color: red;
+    }
+    .redbox1 {
+        grid-area: 2/6/6/10;
+    }
+    .box6 {
+        grid-area: 3/10/6/-1;
+    }
+    .yellowbox2 {
+        grid-area: 4/1/5/3;
+    }
+    .box7 {
+        grid-area: 5/1/6/3;
+    }
+    .box8 {
+        grid-area: 4/4/6/5;
+    }
+    .box9 {
+        grid-area: 4/5/6/6;
+    }
+    .redbox2 {
+        grid-area: 6/1/8/3;
+    }
+    .violet-box {
+        background-color: blueviolet;
+    }
+    .violetbox1 {
+        grid-area: 6/3/8/5;
+    }
+    .box10 {
+        grid-area: 6/5/8/6;
+    }
+    .box11 {
+        grid-area: 6/6/7/8;
+    }
+    .box12 {
+        grid-area: 7/6/8/8;
+    }
+    .yellowbox3 {
+        grid-area: 6/8/8/10;
+    }
+    .yellowbox4 {
+        grid-area: 6/10/8/-1;
+    }
+    .yellowbox5 {
+        grid-area: 8/1/10/2;
+    }
+    .yellowbox6 {
+        grid-area: 8/2/10/4;
+    }
+    .box13 {
+        grid-area: 8/4/9/6;
+    }
+    .box14 {
+        grid-area: 9/4/10/6;
+    }
+    .box15 {
+        grid-area: 8/6/10/7;
+    }
+    .redbox3 {
+        grid-area: 8/7/10/9;
+    }
+    .violetbox2 {
+        grid-area: 8/9/10/-1;
+    }
+    .box16 {
+        grid-area: 10/1/13/2;
+    }
+    .violetbox3 {
+        grid-area: 10/2/14/6;
+    }
+    .box17 {
+        grid-area: 10/6/12/7;
+    }
+    .box18 {
+        grid-area: 10/7/12/8;
+    }
+    .yellowbox7 {
+        grid-area: 10/9/12/10;
+    }
+    .yellowbox8 {
+        grid-area: 10/10/11/-1;
+    }
+    .box19 {
+        grid-area: 12/8/14/10;
+    }
+    .box20 {
+        grid-area: 12/10/-1/-1
+    }
+    .box21 {
+        grid-area: 13/1/-1/2;
+    }
+    .box22 {
+        grid-area: 14/2/-1/4;
+    }
+    .box23 {
+        grid-area: 14/4/-1/7;
+    }
+    .yellowbox9 {
+        grid-area: 14/7/-1/10;
+    }
+    </style>
+</head>
+<body>
+    <h2>Piet Mondrian painting recreated using CSS grid.</h2>
+    <p>See Piet's original work <a href="./pmond2_orig.html">here</a>.</p>
+
+    <div class="piet-painting">
+        <div class="piet-mondrian3">
+          <div class="white-box box1"></div>
+          <div class="yellow-box yellowbox1"></div>
+          <div class="white-box box2"></div>
+          <div class="white-box box3"></div>
+          <div class="white-box box4"></div>
+          <div class="white-box box5"></div>
+          <div class="red-box redbox1"></div>
+          <div class="white-box box6"></div>
+          <div class="yellow-box yellowbox2"></div>
+          <div class="white-box box7"></div>
+          <div class="white-box box8"></div>
+          <div class="white-box box9"></div>
+          <div class="red-box redbox2"></div>
+          <div class="violet-box violetbox1"></div>
+          <div class="white-box box10"></div>
+          <div class="white-box box11"></div>
+          <div class="white-box box12"></div>
+          <div class="yellow-box yellowbox3"></div>
+          <div class="yellow-box yellowbox4"></div>
+          <div class="yellow-box yellowbox5"></div>
+          <div class="yellow-box yellowbox6"></div>
+          <div class="white-box box13"></div>
+          <div class="white-box box14"></div>
+          <div class="white-box box15"></div>
+          <div class="red-box redbox3"></div>
+          <div class="violet-box violetbox2"></div>
+          <div class="white-box box16"></div>
+          <div class="violet-box violetbox3"></div>
+          <div class="white-box box17"></div>
+          <div class="white-box box18"></div>
+          <div class="yellow-box yellowbox7"></div>
+          <div class="yellow-box yellowbox8"></div>
+          <div class="white-box box19"></div>
+          <div class="white-box box20"></div>
+          <div class="white-box box21"></div>
+          <div class="white-box box22"></div>
+          <div class="white-box box23"></div>
+          <div class="yellow-box yellowbox9"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;2024 Chuck Barriga</p>
+    </footer> 
+</body>
+</html>
